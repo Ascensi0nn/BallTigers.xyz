@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400');
+
+:root {
+    --text: #f6dbdb;
+    --background: #000000;
+    --primary: #651a1a;
+    --secondary: #140505;
+    --accent: #b62f2f;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--text);
+
+    --font-scale: 1.333;
+    --p: 1rem;
+    --h5: calc(var(--p) * var(--font-scale));
+    --h4: calc(var(--h5) * var(--font-scale));
+    --h3: calc(var(--h4) * var(--font-scale));
+    --h2: calc(var(--h3) * var(--font-scale));
+    --h1: calc(var(--h2) * var(--font-scale));
+    scroll-behavior: smooth;
+}
+::selection {
+    background-color: var(--accent);
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+p {
+    font-size: var(--p);
+    font-weight: 400;
+}
+h1 {
+    font-size: var(--h1);
+    font-weight: 700;
+}
+h2 {
+    font-size: var(--h2);
+    font-weight: 700;
+}
+h3 {
+    font-size: var(--h3);
+    font-weight: 700;
+}
+h4 {
+    font-size: var(--h4);
+    font-weight: 700;
+}
+h5 {
+    font-size: var(--h5);
+    font-weight: 700;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
