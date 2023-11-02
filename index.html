@@ -11,7 +11,10 @@
 </head>
 <body>
     <div id="img-carousel">
-        <img class="carousel-imgs" src="./icons/jack.jpg">
+        <div class="carousel-imgs">
+            <img class="img foreground" src="./icons/jack.png">
+            <img class="img background" src="./icons/jack-background.jpg">
+        </div>
         <img class="carousel-imgs" src="./icons/landscape2.jpg">
         <img class="carousel-imgs" src="./icons/landscape3.jpg">
         <img class="carousel-imgs" src="./icons/landscape4.jpg">
@@ -31,9 +34,10 @@
         </div>
     </div>
     <div id="projects">
-        <h1 class="light">Projects</h1>
+        <h1 class="light" style="margin-left: 1vw; margin-bottom: 15vh;">Projects</h1>
         <div id="project-holder"></div>
     </div>
+
     <script src="./scripts/index.js"></script>
     <script src="./scripts/projects.js"></script>
 </body>
