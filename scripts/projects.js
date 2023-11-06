@@ -1,29 +1,29 @@
-const project1 = {
-    name: "DueIt",
-    month: "September",
-    year: "2023",
-    description: "Organization through interaction",
-    imgPath: "../icons/dueit.png",
-    link: "https://devpost.com/software/just-another-file-organizer#updates",
-};
-const project2 = {
-    name: "PublicEye",
-    month: "September",
-    year: "2023",
-    description: "i see you",
-    imgPath: "../icons/public-eye.png",
-    link: "https://devpost.com/software/public-eye",
-};
-const project3 = {
-    name: "Jafo",
-    month: "October",
-    year: "2023",
-    description: "Just another file organizer",
-    imgPath: "../icons/jafo.png",
-    link: "https://github.com/Ascensi0nn/jafo",
-}
-
-const projects = [project1, project2, project3]
+const projects = [
+    {
+        name: "DueIt",
+        month: "September",
+        year: "2023",
+        description: "Organization through interaction",
+        imgPath: "../icons/dueit.png",
+        link: "https://devpost.com/software/just-another-file-organizer#updates",
+    },
+    {
+        name: "PublicEye",
+        month: "September",
+        year: "2023",
+        description: "Manage your shit",
+        imgPath: "../icons/public-eye.png",
+        link: "https://devpost.com/software/public-eye",
+    },
+    {
+        name: "Jafo",
+        month: "October",
+        year: "2023",
+        description: "Just another file organizer",
+        imgPath: "../icons/jafo.png",
+        link: "https://github.com/Ascensi0nn/jafo",
+    }
+]
 const projectHolder = document.getElementById('project-holder')
 
 function createHorizontalBar() {
@@ -64,9 +64,15 @@ for (let i = 0; i < projects.length; i++) {
     description.innerText = projects[i]['description'];
     description.classList.add('light');
 
+    const link = document.createElement('a');
+    link.innerText = 'link';
+    link.href = projects[i]['link'];
+    link.target = '_blank';
+
     sideBar.appendChild(title);
     sideBar.appendChild(date);
     sideBar.appendChild(description);
+    sideBar.appendChild(link);
 
     p.appendChild(img);
     p.appendChild(sideBar);
