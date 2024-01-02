@@ -139,3 +139,6 @@ button:hover {
 .selected {
     background-color: var(--accent);
 }
+.light {
+    color: var(--primary);
+}

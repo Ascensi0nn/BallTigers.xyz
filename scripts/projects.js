@@ -4,7 +4,7 @@ const projects = [
         month: "September",
         year: "2023",
         description: "Organization through interaction",
-        imgPath: "../icons/dueit.png",
+        imgPath: "./icons/dueit.png",
         link: "https://devpost.com/software/just-another-file-organizer#updates",
     },
     {
@@ -12,7 +12,7 @@ const projects = [
         month: "September",
         year: "2023",
         description: "Manage your shit",
-        imgPath: "../icons/public-eye.png",
+        imgPath: "./icons/public-eye.png",
         link: "https://devpost.com/software/public-eye",
     },
     {
@@ -20,7 +20,7 @@ const projects = [
         month: "October",
         year: "2023",
         description: "Just another file organizer",
-        imgPath: "../icons/jafo.png",
+        imgPath: "./icons/jafo.png",
         link: "https://github.com/Ascensi0nn/jafo",
     }
 ]
@@ -68,6 +68,7 @@ for (let i = 0; i < projects.length; i++) {
     link.innerText = 'link';
     link.href = projects[i]['link'];
     link.target = '_blank';
+    link.style.color = 'var(--primary)';
 
     sideBar.appendChild(title);
     sideBar.appendChild(date);
