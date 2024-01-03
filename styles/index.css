@@ -1,3 +1,7 @@
+:root {
+    scroll-behavior: smooth;
+}
+
 /* image shit */
 
 .container {
@@ -64,7 +68,7 @@ body::-webkit-scrollbar-thumb {
     height: 100px;
     left: 50%;
     top: 90vh;
-    fill: var(--text);
+    fill: var(--primary);
     animation: ease-in-out bounce 5s infinite;
     animation-delay: 2s;
     z-index: 3; 
@@ -127,18 +131,21 @@ button {
     padding-left: 30px;
     padding-right: 30px;
     background-color: transparent;
-    border: solid gray 1px;
-    color: var(--text);
+    border: solid transparent 1px;
     z-index: 3;
     transition: ease-in-out 0.2s;
 }
 button:hover {
-    border: solid var(--primary) 1px;
+    border: solid var(--accent) 1px;
     transition: ease-in-out 0.1s;
 }
 .selected {
     background-color: var(--accent);
 }
+
 .light {
-    color: var(--primary);
+    color: white;
+}
+.dark {
+    color: var(--text);
 }

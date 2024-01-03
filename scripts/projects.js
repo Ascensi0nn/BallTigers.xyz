@@ -53,16 +53,16 @@ for (let i = 0; i < projects.length; i++) {
 
     const title = document.createElement('h2');
     title.style.marginBottom = '0px';
-    title.classList.add('light')
+    title.classList.add('dark')
     title.innerText = projects[i]['name'];
 
     const date = document.createElement('h5');
     date.innerText = projects[i]['month'] + ", " + projects[i]['year'];
-    date.classList.add('light');
+    date.classList.add('dark');
     
     const description = document.createElement('p');
     description.innerText = projects[i]['description'];
-    description.classList.add('light');
+    description.classList.add('dark');
 
     const link = document.createElement('a');
     link.innerText = 'link';
