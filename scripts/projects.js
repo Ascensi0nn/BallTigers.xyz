@@ -45,11 +45,16 @@ for (let i = 0; i < projects.length; i++) {
     img.src = projects[i]['imgPath'];
     img.style.height = '35vh';
     img.style.borderRadius = '2rem';
+    img.style.padding = '25px';
 
     const sideBar = document.createElement('div');
     sideBar.style.display = 'flex';
     sideBar.style.flexDirection = 'column';
     sideBar.style.alignItems = 'center';
+    sideBar.style.backgroundColor = 'var(--primary)';
+    sideBar.style.borderRadius = '2rem';
+    sideBar.style.paddingLeft = '25px';
+    sideBar.style.paddingRight = '25px';
 
     const title = document.createElement('h2');
     title.style.marginBottom = '0px';
@@ -68,7 +73,7 @@ for (let i = 0; i < projects.length; i++) {
     link.innerText = 'link';
     link.href = projects[i]['link'];
     link.target = '_blank';
-    link.style.color = 'var(--primary)';
+    link.style.color = 'var(--background-darker)';
 
     sideBar.appendChild(title);
     sideBar.appendChild(date);
